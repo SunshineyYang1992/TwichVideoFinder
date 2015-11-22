@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		81395F751BFF42B800C85D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395F741BFF42B800C85D4C /* AppDelegate.swift */; };
-		81395F771BFF42B800C85D4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395F761BFF42B800C85D4C /* ViewController.swift */; };
-		81395F7A1BFF42B800C85D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81395F781BFF42B800C85D4C /* Main.storyboard */; };
 		81395F7C1BFF42B800C85D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81395F7B1BFF42B800C85D4C /* Assets.xcassets */; };
 		81395F7F1BFF42B800C85D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81395F7D1BFF42B800C85D4C /* LaunchScreen.storyboard */; };
+		81395F871BFF47B900C85D4C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395F861BFF47B900C85D4C /* DetailTableViewController.swift */; };
+		81395F8B1BFF5A2600C85D4C /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395F8A1BFF5A2600C85D4C /* Video.swift */; };
+		816143411C0103FE00167ECC /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816143401C0103FE00167ECC /* SearchController.swift */; };
+		817ED43F1C009EBF005FC83D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817ED43E1C009EBF005FC83D /* CircleImage.swift */; };
+		81A1D7FB1C00715C006AF328 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1D7FA1C00715C006AF328 /* VideoCell.swift */; };
+		81E090391BFFC98200A48EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E090371BFFC98200A48EB0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81395F711BFF42B800C85D4C /* TwitchVideoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchVideoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81395F741BFF42B800C85D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81395F761BFF42B800C85D4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		81395F791BFF42B800C85D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81395F7B1BFF42B800C85D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81395F7E1BFF42B800C85D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81395F801BFF42B800C85D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81395F861BFF47B900C85D4C /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		81395F8A1BFF5A2600C85D4C /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		816143401C0103FE00167ECC /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		817ED43E1C009EBF005FC83D /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		81A1D7FA1C00715C006AF328 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		81E090381BFFC98200A48EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		81395F731BFF42B800C85D4C /* TwitchVideoFinder */ = {
 			isa = PBXGroup;
 			children = (
-				81395F741BFF42B800C85D4C /* AppDelegate.swift */,
-				81395F761BFF42B800C85D4C /* ViewController.swift */,
-				81395F781BFF42B800C85D4C /* Main.storyboard */,
-				81395F7B1BFF42B800C85D4C /* Assets.xcassets */,
-				81395F7D1BFF42B800C85D4C /* LaunchScreen.storyboard */,
+				816143421C010D3100167ECC /* Controller */,
+				816143441C010D4D00167ECC /* View */,
+				816143431C010D4000167ECC /* Modal */,
 				81395F801BFF42B800C85D4C /* Info.plist */,
+				81A1D7FD1C007ACE006AF328 /* Support */,
+				81A1D7FC1C007AB9006AF328 /* Storyboard */,
 			);
 			path = TwitchVideoFinder;
+			sourceTree = "<group>";
+		};
+		816143421C010D3100167ECC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81395F861BFF47B900C85D4C /* DetailTableViewController.swift */,
+				816143401C0103FE00167ECC /* SearchController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		816143431C010D4000167ECC /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				81395F8A1BFF5A2600C85D4C /* Video.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		816143441C010D4D00167ECC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81A1D7FA1C00715C006AF328 /* VideoCell.swift */,
+				817ED43E1C009EBF005FC83D /* CircleImage.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		81A1D7FC1C007AB9006AF328 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				81E090371BFFC98200A48EB0 /* Main.storyboard */,
+				81395F7D1BFF42B800C85D4C /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		81A1D7FD1C007ACE006AF328 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				81395F7B1BFF42B800C85D4C /* Assets.xcassets */,
+				81395F741BFF42B800C85D4C /* AppDelegate.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +177,7 @@
 			files = (
 				81395F7F1BFF42B800C85D4C /* LaunchScreen.storyboard in Resources */,
 				81395F7C1BFF42B800C85D4C /* Assets.xcassets in Resources */,
-				81395F7A1BFF42B800C85D4C /* Main.storyboard in Resources */,
+				81E090391BFFC98200A48EB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81395F771BFF42B800C85D4C /* ViewController.swift in Sources */,
+				81395F871BFF47B900C85D4C /* DetailTableViewController.swift in Sources */,
+				817ED43F1C009EBF005FC83D /* CircleImage.swift in Sources */,
+				816143411C0103FE00167ECC /* SearchController.swift in Sources */,
+				81A1D7FB1C00715C006AF328 /* VideoCell.swift in Sources */,
+				81395F8B1BFF5A2600C85D4C /* Video.swift in Sources */,
 				81395F751BFF42B800C85D4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,20 +200,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		81395F781BFF42B800C85D4C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81395F791BFF42B800C85D4C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81395F7D1BFF42B800C85D4C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				81395F7E1BFF42B800C85D4C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		81E090371BFFC98200A48EB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81E090381BFFC98200A48EB0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,6 +343,7 @@
 				81395F851BFF42B800C85D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

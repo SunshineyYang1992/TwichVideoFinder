@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TwitchVideoFinder
 //
-//  Created by Sunshine Yang on 11/20/15.
+//  Created by Sunshine Yang on 11/21/15.
 //  Copyright © 2015 SunshineYang. All rights reserved.
 //
 
